@@ -87,11 +87,30 @@ p#about{
 
 div{
   width: 1000px;
+  height: 400px;
   background-color: rgba(255, 200, 50, .2);
   border-radius: 30px 50px 50px 50px;
   z-index: 3;
+  transition: all 1s ease;
+	-moz-transition:all 1s ease; 
+  -webkit-transition:all 1s ease;
+	-o-transition:all 1s ease; 
+  -ms-transition:all 1s ease;
 }
 
+div:hover{
+  width: 1200px;
+  height: 500px;
+  background-color: rgba(255, 200, 50, .99);
+  border-radius: 30px 50px 50px 50px;
+  z-index: 4;
+  font-color: rgba(255, 130, 20, 1);
+  transition: all 1s ease;
+	-moz-transition:all 1s ease; 
+  -webkit-transition:all 1s ease;
+	-o-transition:all 1s ease; 
+  -ms-transition:all 1s ease;
+}
 body{
   margin: auto auto auto 25%;
 }

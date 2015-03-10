@@ -1,19 +1,37 @@
 var anchors = document.getElementsByTagName('a');
-// var = document.getElementById(' ');
-// var = document.getElementById(' ');
-// var = document.getElementById(' ');
-show_about = anchors[0].addEventListener('click', function(){
-               alert("working!")}
+
+var about = document.getElementById('about');
+var concerts = document.getElementById('concerts');
+var discography = document.getElementById('discography');
+
+var show_about = anchors[0].addEventListener('click', function(){
+               about.style.visibility='visible';
+               about.style.display='inline';
+               concerts.style.visibility='hidden';
+               concerts.style.display='none';
+               discography.style.visibility='hidden';
+               discography.style.display='none';
+             }
              );
 
-show_concerts = anchors[1].addEventListener('click', function(){
-               alert("working!")}
-               // obj2.style.visibility='hidden';
-               // obj2.style.display='none';
+var show_concerts = anchors[1].addEventListener('click', function(){
+               about.style.visibility='hidden';
+               about.style.display='none';
+               concerts.style.visibility='visible';
+               concerts.style.display='inline';
+               discography.style.visibility='hidden';
+               discography.style.display='none';
+             }
              );
              
-show_discography = anchors[2].addEventListener('click', function(){
-               alert("working!")}
+var show_discography = anchors[2].addEventListener('click', function(){
+               about.style.visibility='hidden';
+               about.style.display='none';
+               concerts.style.visibility='hidden';
+               concerts.style.display='none';
+               discography.style.visibility='visible';
+               discography.style.display='inline';
+             }
              );
 
 
